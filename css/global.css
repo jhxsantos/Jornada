@@ -1,0 +1,159 @@
+@import url("./cabecalho.css");
+@import url("./banner.css");
+
+/* Página inicial (index.html) */
+@import url("./ofertas.css");
+@import url("./busca-por-categoria.css");
+@import url("./destinos-populares.css");
+@import url("./condicoes-de-pagamento.css");
+@import url("./depoimentos.css");
+
+/* Blog */
+@import url("./blog.css");
+@import url("./pacotes.css");
+@import url("./contato.css");
+
+@import url("./rodape.css");
+
+:root {
+    /* Colors */
+    --branco: #fff;
+    --preto: #000;
+    --neutral-c: #f5f5f5;
+    --cinza-escuro: #8c8c8c;
+    --cinza-claro: #c9c9c9;
+    --grafite: #222;
+    --vermelho: #b81515;
+    --vermelho-claro: #f74444;
+}
+
+* {
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;    
+}
+
+img {
+    max-width: 100%;
+}
+
+span.material-symbols-outlined {
+    color: var(--cinza-escuro, #8C8C8C);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+figure {
+    margin: 0;
+}
+
+.botao {
+    border-radius: 8px;
+    background: var(--vermelho, #B81515);
+    padding: 16px 48px;
+    box-sizing: border-box;
+    display: inline-block;    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--branco, #FFF);
+    border: none;
+    width: fit-content;
+    box-shadow: 1px 1px 3px 2px var(--grafite);
+}
+
+.botao:hover {
+    background: var(--vermelho-claro, #a33030);
+}
+
+.botao:active {
+    box-shadow: 0px 0px 3px 2px var(--grafite);
+}
+
+.form__label {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--grafite, #222);
+}
+
+.form__input {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--grafite, #222);
+    padding: 0.5rem;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 5px;
+    resize: none; 
+    margin: 2px 0;   
+}
+
+.form__input:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: var(--cinza-claro);
+}
+
+.form__erro {
+    font-size: 16px;
+    font-weight: 700;
+    color: red;
+    margin-bottom: 1.5rem;
+    height: 25px;
+}
+
+.container { 
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+ 
+    .container { 
+        margin: 0 2rem;
+    }   
+
+}

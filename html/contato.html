@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada - Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />        
+    <link rel="stylesheet" href="../css/global.css">
+    <script type="module" src="../js/contato.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho__container">
+        <div class="cabecalho">
+            <a href="../index.html" class="cabecalho__logo">
+                <img class="cabecalho__logo--imagem" alt="Logotipo da Jornada - link para a página inicial" src="../img/logoprovisriabranca-1@2x.png" />
+                <img class="cabecalho__logo--icone" alt="Logotipo da Jornada - link para a página inicial" src="../img/logo-sem-texto-branca.png" />
+            </a>
+            <nav class="cabecalho__navegacao" aria-label="Navegação principal">
+                <ul class="cabecalho__navegacao--lista">
+                    <li class="cabecalho__navegacao--item">
+                        <a href="../index.html">Início</a>
+                    </li>
+                    <li class="cabecalho__navegacao--item">
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li class="cabecalho__navegacao--item">
+                        <a href="./pacotes.html">Pacotes de viagem</a>
+                    </li>
+                    <li class="cabecalho__navegacao--item">
+                        <a href="./contato.html">Contato</a>
+                    </li>
+                </ul>
+                <div class="menu-hamburguer">
+                    <input class="menu-hamburguer--check" id="menu-hamburguer--check" type="checkbox">
+                    <label class="menu-hamburguer--label" for="menu-hamburguer--check" aria-label="Abrir/Fechar menu">
+                        <img src="../img/menu-hamburguer.png" alt="Abrir/fechar menu" role="button">
+                    </label>
+                    <ul class="menu-hamburguer--lista" aria-label="Menu aberto">
+                        <li class="menu-hamburguer--item">
+                            <a href="../index.html" aria-label="Página inicial">Início</a>
+                        </li>
+                        <li class="menu-hamburguer--item">
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <li class="menu-hamburguer--item">
+                            <a href="./pacotes.html">Pacotes de viagem</a>
+                        </li>
+                        <li class="menu-hamburguer--item">
+                            <a href="./contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="banner-geral">
+            <div class="banner-geral__wrapper">
+                <img class="banner-geral__img" alt="Duas meninas enviando uma mensagem em um laptop" src="../img/banner-contato.png" />
+                <div class="banner-geral__titulo-e-descricao">
+                    <h1 class="banner-geral__titulo--texto">Entre em contato</h1>
+                    <div class="banner-geral__titulo--sublinhado"></div>  
+                    <p class="banner-geral__texto">
+                        Dúvidas, sugestões, problemas para resolver? 
+                        Temos uma equipe de plantão para ajudar você!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">     
+
+            <div class="contato__titulo">
+                <h2 class="contato__titulo--texto">Preencha o formulário</h2>
+                <div class="contato__titulo--sublinhado"></div>            
+                <h3 class="contato__titulo--descricao">
+                    Temos uma equipe sempre em prontidão para resolver suas dúvidas, problemas, 
+                    trazer dicas e orientações objetivas para tornar sua experiência o mais 
+                    prazerosa e tranquila possível. Preencha seus dados que vamos retornar seu 
+                    contato conforme a urgência do seu chamado. Pode confiar!
+                </h3>
+            </div>
+        
+            <form class="contato__form" id="contato__form">
+
+                <label class="form__label" for="contato__nome">Nome completo:</label>
+                <input type="text" class="contato__nome form__input" id="contato__nome" name="nome" minlength="8" maxlength="40" required></input>
+                <span class="form__erro" id="form__erro"></span>
+
+                <label class="form__label" for="contato__telefone">Telefone:</label>
+                <input type="text" class="contato__telefone form__input" id="contato__telefone" name="telefone" minlength="14" maxlength="15" required></input>
+                <span class="form__erro" id="form__erro"></span>
+
+                <label class="form__label" for="contato__email">E-mail:</label>
+                <input type="email" class="contato__email form__input" id="contato__email" name="e-mail" minlength="8" maxlength="40" required></input>
+                <span class="form__erro" id="form__erro"></span>
+
+                <label class="form__label" for="contato__assunto">Assunto:</label>
+                <input type="text" class="contato__assunto form__input" id="contato__assunto" name="assunto" minlength="8" maxlength="40" required></input>
+                <span class="form__erro" id="form__erro"></span>
+
+                <label class="form__label" for="contato__mensagem">Mensagem:</label>
+                <textarea type="text" class="contato__mensagem form__input" id="contato__mensagem" name="mensagem" rows="5" minlength="10" maxlength="256" required></textarea>
+                <span class="form__erro" id="form__erro"></span>
+
+                <div class="contato__form--botao">
+                    <button class="botao-enviar botao" id="botao-enviar" aria-label="Enviar mensagem">Enviar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <div class="pre-footer__container">
+        <img class="pre-footer__image" alt="" src="../img/pre-footer-image-3.png" />
+    </div>
+    
+    <section class="footer__container">
+        <div class="footer">
+            <div class="footer__logo-container">
+                <img class="footer__logo-icon" alt="Logotipo da Jornada no rodapé da página" src="../img/logobranco-1@2x.png" />
+                <div class="footer__info-container">
+                    <p class="footer__text-info">
+                        Horário de atendimento: 08h - 20h (Segunda a Sábado)
+                    </p>
+                    <p class="footer__text-info">
+                        Desenvolvido por José Henrique. Projeto fictício sem fins comerciais.
+                    </p>
+                </div>
+            </div>
+            <div class="footer__social-media-container">
+                <div class="footer__social-media-text">Acesse nossas redes:</div>
+                <ul class="footer__social-media-icons">
+                    <li>
+                        <a href="">
+                            <img class="footer__social-media-icon" alt="ícone whatsapp" src="../img/whatsapp-1.svg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="footer__social-media-icon" alt="ícone instagram" src="../img/instragam-1.svg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="footer__social-media-icon" alt="ícone twitter" src="../img/twiter-1.svg" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

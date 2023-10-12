@@ -1,0 +1,120 @@
+.ofertas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+}
+
+.ofertas__titulo {
+    color: var(--grafite);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.ofertas__titulo--texto {
+    margin: 0;
+    padding: 0;
+}
+
+.ofertas__titulo--sublinhado {
+    width: 180px;
+    height: 4px;
+    background: var(--vermelho);
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.ofertas__cards--grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ofertas__cards--item {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 32px;
+    color: var(--branco);
+    flex: 1 0 calc(50% - 48px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ofertas__cards--japao {
+    background-image: url("../img/tokyo.png");
+}
+
+.ofertas__cards--san-andreas {
+    background-image: url("../img/san-andreas.png");
+}
+
+.ofertas__cards--paraiba {
+    background-image: url("../img/paraiba.png");
+}
+
+.ofertas__cards--manaus {
+    background-image: url("../img/manaus.png");
+}
+
+.ofertas__card--destino {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.ofertas__card--destino-tipo {
+    color: var(--branco, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.ofertas__card--destino-nome {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.ofertas__card--preco {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .ofertas {
+        padding: 0;
+    }
+
+    .ofertas__cards--grupo {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+

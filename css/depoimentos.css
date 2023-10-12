@@ -1,0 +1,105 @@
+
+
+.depoimentos {
+    padding: 0 2rem;
+}
+
+.depoimentos__titulo {
+    color: var(--grafite);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.depoimentos__titulo--sublinhado {
+    width: 180px;
+    height: 4px;
+    background: var(--vermelho);
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.depoimentos__wrapper {
+    display: flex;
+    flex-direction: column;    
+    align-items: stretch;
+    padding: 0;
+}
+
+.depoimentos__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 4rem;
+}
+
+.depoimentos__texto {
+    color: var(--grafite, #222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+}
+
+.depoimentos__autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+}
+
+.depoimentos__autor--foto {
+    max-width: 50px;
+}
+
+.depoimentos__autor--info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.depoimentos__autor--nome {
+    color: var(--grafite, #222);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+}
+
+.depoimentos__estrelas {
+    font-size: 0px;
+}
+
+.depoimentos__autor--avaliacao-estrela {
+    width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .depoimentos__autor--nome {
+        font-size: 20px;
+    }
+
+    .depoimentos__autor--foto {
+        max-width: 86px;
+    }
+
+    .depoimentos__texto {
+        font-size: 18px;     
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .depoimentos__wrapper {
+        flex-direction: row;    
+        gap: 1rem;
+    }
+}

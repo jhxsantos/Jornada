@@ -1,0 +1,46 @@
+.contato__titulo {
+    color: var(--grafite);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    max-width: 800px;
+}
+
+.contato__titulo--texto {
+    margin: 0;
+    text-align: center;
+}
+
+.contato__titulo--sublinhado {
+    width: 180px;
+    height: 4px;
+    background: var(--vermelho);
+    margin-top: 16px;
+    padding: 0 1rem;
+}
+
+.contato__titulo--descricao {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--grafite, #222);
+    margin-top: 2rem;
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    max-width: 800px;
+}
+
+.contato__form--botao {
+    text-align: center;
+}
+
