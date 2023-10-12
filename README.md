@@ -10,6 +10,7 @@ além de praticar os conhecimentos em HTML, CSS e TypeScript.
 | -------------  | --- |
 | :sparkles: Nome        | Jornada
 | :label: Tecnologias | TypeScript, CSS, HTML5
+| :label: Acessibilidade | Preparada para uso de leitores de tela
 | :rocket: URL         | https://jornada-omega.vercel.app/
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
