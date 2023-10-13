@@ -16,6 +16,7 @@ export const validarFormulario = (formulario) => {
     return validou;
 };
 const validarInput = (input, CampoErro) => {
+    CampoErro.textContent = '';
     // Verifica os "validity" e retorna false se algum deles ocorrer.
     if (input.validity.valueMissing) {
         CampoErro.textContent = `informe ${input.getAttribute('name')}`;
@@ -44,7 +45,6 @@ const validarInput = (input, CampoErro) => {
         }
     }
     // Se não encontrou problemas, limpa o <span> da mensagem de erro e retorna true.
-    CampoErro.textContent = " ";
     return true;
 };
 // export const mascaraTelefone = (value: string): string => {
