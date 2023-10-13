@@ -1,7 +1,4 @@
-# Jornada
-Site da agência de viagens fictícia "Jornada", com o objetivo de praticar a aplicação de acessibilidade, prevendo o uso de leitores de tela.
-
-## Jornada - site para uma agência de viagens fictícia
+# Jornada - site para uma agência de viagens fictícia
 
 Projeto Front-End desenvolvido com o objetivo de praticar a aplicação de acessibilidade, prevendo o uso de leitores de tela,
 além de praticar os conhecimentos em HTML, CSS e TypeScript.
